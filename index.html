@@ -1,0 +1,123 @@
+<!--
+  Project Name: Personal Portfolio Website (CSS Core)
+  Page Name: Home / Portfolio (index.html)
+  Sections: Header & Navigation, Hero & About Me, Projects, Technical Skills, Contact Me, Footer, Back to Top
+  Author: Parneet Tyagi
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parneet Tyagi - Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <!-- Top Header and Section Navigation -->
+  <header class="site-header">
+    <h1>Parneet Tyagi</h1>
+    <nav class="navbar" aria-label="Primary Navigation">
+      <ul class="nav-list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <hr class="section-divider">
+
+  <!-- Main Content -->
+  <main class="main-content">
+    <!-- Hero & About Section -->
+    <section id="about" class="card-section about-section" aria-labelledby="hero-heading">
+      <h2 id="hero-heading">Welcome to My Portfolio</h2>
+      <p>Hello! I am Parneet Tyagi, a web development student. This is my personal portfolio website.</p>
+
+      <h3>About Me</h3>
+      <img
+        src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='96' fill='%23ffe8cc' stroke='%23e6a15c' stroke-width='4'/%3E%3Ccircle cx='58' cy='62' r='22' fill='%23d98a3c'/%3E%3Ccircle cx='58' cy='62' r='12' fill='%23f7b2b7'/%3E%3Ccircle cx='142' cy='62' r='22' fill='%23d98a3c'/%3E%3Ccircle cx='142' cy='62' r='12' fill='%23f7b2b7'/%3E%3Cellipse cx='100' cy='112' rx='56' ry='48' fill='%23f4a259'/%3E%3Cellipse cx='100' cy='124' rx='36' ry='28' fill='%23fff6e5'/%3E%3Ccircle cx='78' cy='102' r='7' fill='%23222'/%3E%3Ccircle cx='76' cy='100' r='2.5' fill='%23fff'/%3E%3Ccircle cx='122' cy='102' r='7' fill='%23222'/%3E%3Ccircle cx='120' cy='100' r='2.5' fill='%23fff'/%3E%3Ccircle cx='66' cy='116' r='8' fill='%23f7a1a8' opacity='0.75'/%3E%3Ccircle cx='134' cy='116' r='8' fill='%23f7a1a8' opacity='0.75'/%3E%3Cellipse cx='100' cy='113' rx='6' ry='4.5' fill='%23e06d75'/%3E%3Cpath d='M92 120 Q100 128 108 120' stroke='%23222' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3Cline x1='45' y1='110' x2='72' y2='114' stroke='%238c5828' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='45' y1='120' x2='72' y2='119' stroke='%238c5828' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='128' y1='114' x2='155' y2='110' stroke='%238c5828' stroke-width='2' stroke-linecap='round'/%3E%3Cline x1='128' y1='119' x2='155' y2='120' stroke='%238c5828' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E"
+        alt="Cute hamster with round ears, rosy cheeks, and whiskers"
+        width="180"
+        class="profile-img"
+      >
+      <p>I am passionate about learning web development and building creative projects.</p>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Projects Section -->
+    <section id="projects" class="card-section projects-section" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">My Projects</h2>
+      <ul class="project-list">
+        <li><strong>Portfolio Website:</strong> A personal one-page website to showcase your bio, skills, and contact details.</li>
+        <li><strong>Medium Clone:</strong> A simple blog layout that looks like Medium, built only with HTML and CSS.</li>
+        <li><strong>Birthday Card:</strong> A creative greeting card webpage designed with HTML structure and CSS styling.</li>
+        <li><strong>User Form:</strong> A form webpage with fields like name, email, and message for practicing form handling.</li>
+      </ul>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Technical Skills Section -->
+    <section id="skills" class="card-section skills-section" aria-labelledby="skills-heading">
+      <h2 id="skills-heading">Technical Skills</h2>
+      <table class="skills-table">
+        <thead>
+          <tr>
+            <th scope="col">Skill</th>
+            <th scope="col">Level</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>Learning</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr class="section-divider">
+
+    <!-- Contact Section -->
+    <section id="contact" class="card-section contact-section" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact Me</h2>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" cols="30" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <hr class="section-divider">
+
+  <!-- Fixed Back to Top Link -->
+  <a href="#top" class="back-to-top" aria-label="Back to Top">Back to Top</a>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Parneet Tyagi. All rights reserved.</p>
+  </footer>
+</body>
+</html>
